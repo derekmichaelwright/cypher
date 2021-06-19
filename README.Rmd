@@ -34,4 +34,18 @@ cypher_decode(xx)
 
 ---
 
+# Personalize
+
+A custom cypher for this package can be recreated using the following code. However, it should be noted that the recipient will need the `Data/cyphers.RData` file to decode the messages.
+
+```{r eval = F}
+cyphers <- list()
+for(i in 1:999) {
+  cyphers[i] <- paste(round(runif(1000, 0, 9)),collapse = "")
+}
+save(cyphers, file = "Data/cyphers.RData")
+```
+
+---
+
 &copy; Derek Michael Wright [www.dblogr.com/](https://dblogr.com/)

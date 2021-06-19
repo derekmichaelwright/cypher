@@ -6,6 +6,7 @@
 #' @export
 
 cypher_decode <- function(x) {
-  cn <- as.numeric(substr(x, 1, 3))
-  intToUtf8(utf8ToInt(substr(x, 4, nchar(x))) - utf8ToInt(substr(cyphers[cn], 1, nchar(x)-3)))
+  x <- as.numeric(unlist(strsplit(x, split = " ")))
+  cn <- x[1]
+  intToUtf8(x[2:length(x)] - utf8ToInt(substr(cyphers[cn], 1, length(x)-1)))
 }

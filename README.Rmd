@@ -1,0 +1,37 @@
+---
+title: agData R Package
+output: github_document
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = T, fig.width = 10, fig.height = 4)
+```
+
+`cypher`: an `R` package for coding secret messages
+
+# Installation
+
+```{r eval = F}
+devtools::install_github("derekmichaelwright/cypher")
+```
+
+```{r}
+library(cypher)
+```
+
+# Code Message
+
+```{r}
+xx <- cypher_code("This is a secret coded message")
+xx
+```
+
+# Decoded Message
+
+```{r}
+cypher_decode(xx)
+```
+
+---
+
+&copy; Derek Michael Wright [www.dblogr.com/](https://dblogr.com/)

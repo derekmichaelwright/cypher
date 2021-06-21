@@ -1,0 +1,13 @@
+name: Decypher
+title: Decypher
+username:
+account: wrightmderek
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 4300652
+bundleId: 4740735
+url: https://wrightmderek.shinyapps.io/Decypher/
+when: 1624307550.1787
+lastSyncTime: 1624307550.1787
+asMultiple: FALSE
+asStatic: FALSE

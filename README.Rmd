@@ -34,6 +34,14 @@ cypher_decode(xx)
 
 ---
 
+# Shiny App
+
+Download and run the following `R` script:
+
+https://github.com/derekmichaelwright/cypher/blob/master/shinyapp/app.R
+
+---
+
 # Personalize
 
 A custom cypher for this package can be recreated using the following code. However, it should be noted that the recipient will need the `Data/cyphers.RData` file to decode the messages.

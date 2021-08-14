@@ -79,7 +79,7 @@
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">xx</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/cypher_code.html">cypher_code</a></span><span class="op">(</span><span class="st">"This is a secret coded message"</span><span class="op">)</span>
 <span class="va">xx</span></code></pre></div>
-<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] "865 138 152 156 165 83 156 170 86 147 80 163 154 154 162 158 170 86 156 163 148 157 150 83 161 154 165 164 146 158 153"</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] "570 133 155 155 166 82 159 163 81 150 82 166 155 149 163 153 166 84 151 161 149 157 148 89 161 155 170 166 146 152 152"</span></span></code></pre></div>
 </div>
 <div id="decoded-message" class="section level1">
 <h1 class="hasAnchor">
@@ -87,6 +87,13 @@
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="reference/cypher_decode.html">cypher_decode</a></span><span class="op">(</span><span class="va">xx</span><span class="op">)</span></code></pre></div>
 <div class="sourceCode" id="cb6"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] "This is a secret coded message"</span></span></code></pre></div>
+<hr>
+</div>
+<div id="shiny-app" class="section level1">
+<h1 class="hasAnchor">
+<a href="#shiny-app" class="anchor"></a>Shiny App</h1>
+<p>Download and run the following <code>R</code> script:</p>
+<p><a href="https://github.com/derekmichaelwright/cypher/blob/master/shinyapp/app.R" class="uri">https://github.com/derekmichaelwright/cypher/blob/master/shinyapp/app.R</a></p>
 <hr>
 </div>
 <div id="personalize" class="section level1">
@@ -99,6 +106,11 @@
   <span class="va">cyphers</span><span class="op">[</span><span class="va">i</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Round.html">round</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/Uniform.html">runif</a></span><span class="op">(</span><span class="fl">1000</span>, <span class="fl">0</span>, <span class="fl">9</span><span class="op">)</span><span class="op">)</span>,collapse <span class="op">=</span> <span class="st">""</span><span class="op">)</span>
 <span class="op">}</span>
 <span class="fu"><a href="https://rdrr.io/r/base/save.html">save</a></span><span class="op">(</span><span class="va">cyphers</span>, file <span class="op">=</span> <span class="st">"Data/cyphers.RData"</span><span class="op">)</span></code></pre></div>
+<hr>
+</div>
+<div id="shiny-app-1" class="section level1">
+<h1 class="hasAnchor">
+<a href="#shiny-app-1" class="anchor"></a>Shiny App</h1>
 <hr>
 <p>© Derek Michael Wright <a href="https://dblogr.com/">www.dblogr.com/</a></p>
 </div>

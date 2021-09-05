@@ -56,9 +56,4 @@ save(cyphers, file = "Data/cyphers.RData")
 
 ---
 
-# Shiny App
-
-
----
-
 &copy; Derek Michael Wright [www.dblogr.com/](https://dblogr.com/)

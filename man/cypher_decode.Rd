@@ -15,3 +15,6 @@ decoded message
 \description{
 decode a secret message.
 }
+\examples{
+cypher_decode(xx)
+}

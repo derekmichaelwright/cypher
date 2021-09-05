@@ -4,6 +4,8 @@
 #' @param x coded text
 #' @return decoded message
 #' @export
+#' @examples
+#' cypher_decode(xx)
 
 cypher_decode <- function(x) {
   x <- as.numeric(unlist(strsplit(x, split = " ")))

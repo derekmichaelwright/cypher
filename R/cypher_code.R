@@ -4,6 +4,8 @@
 #' @param x text
 #' @return coded text
 #' @export
+#' @examples
+#' xx <- cypher_code("This is a secret coded message")
 
 cypher_code <- function(x) {
   cn <- round(runif(1, 1, 999))

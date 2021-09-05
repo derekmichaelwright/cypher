@@ -1,5 +1,8 @@
-agData R Package
+cypher
 ================
+Derek Michael Wright <wrightmderek@gmail.com>
+[www.dblogr.com/](https://dblogr.com/#posts_dblogr)
+2021-09-05
 
 `cypher`: an `R` package for coding secret messages
 
@@ -20,7 +23,7 @@ xx <- cypher_code("This is a secret coded message")
 xx
 ```
 
-    ## [1] "882 137 156 156 172 84 161 166 82 150 86 170 154 149 162 153 171 82 155 161 148 152 154 83 162 149 168 165 154 160 158"
+    ## [1] "658 139 153 159 165 82 154 170 85 145 81 171 157 151 171 157 171 82 154 161 152 156 156 88 159 155 171 167 154 156 155"
 
 # Decoded Message
 

@@ -1,5 +1,15 @@
 ---
-title: agData R Package
+title: "cypher"
+subtitle: "An R package for coding and decoded messages"
+summary:  "An R package for coding and decoded messages"
+date: "`r Sys.Date()`"
+author: "Derek Michael Wright <wrightmderek@gmail.com> [www.dblogr.com/](https://dblogr.com/#posts_dblogr)"
+tags: [ "dblogr", "R" ]
+weight: 5
+codefolding_show: "show"
+image:
+  preview_only: true
+external_link: "https://dblogr.com/dblogr/cypher/cypher.html"
 output: github_document
 ---
 

@@ -17,6 +17,8 @@ output: github_document
 knitr::opts_chunk$set(echo = T, fig.width = 10, fig.height = 4)
 ```
 
+<img src="hex_cypher.png" align="right" width = "200px" />
+
 `cypher`: an `R` package for coding secret messages
 
 # Installation

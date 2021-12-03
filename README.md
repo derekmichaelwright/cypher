@@ -1,12 +1,9 @@
 cypher
 ================
-Derek Michael Wright <wrightmderek@gmail.com>
-[www.dblogr.com/](https://dblogr.com/#posts_dblogr)
-2021-12-03
 
 <img src="hex_cypher.png" align="right" width = "200px" />
 
-`cypher`: an `R` package for coding secret messages
+`cypher`: an `R` package for coding and decoding secret messages
 
 # Installation
 
@@ -25,7 +22,7 @@ xx <- cypher_code("This is a secret coded message")
 xx
 ```
 
-    ## [1] "229 138 155 156 167 84 158 166 87 146 88 165 157 148 170 156 166 86 151 166 155 157 150 88 160 151 166 169 153 155 156"
+    ## [1] "951 138 157 155 168 88 156 164 85 149 85 168 155 155 167 151 164 81 149 161 152 157 152 84 157 158 164 169 154 154 154"
 
 # Decoded Message
 

@@ -1,15 +1,5 @@
 ---
-title: "cypher"
-subtitle: "An R package for coding and decoded messages"
-summary:  "An R package for coding and decoded messages"
-date: "`r Sys.Date()`"
-author: "Derek Michael Wright <wrightmderek@gmail.com> [www.dblogr.com/](https://dblogr.com/#posts_dblogr)"
-tags: [ "dblogr", "R" ]
-weight: 5
-codefolding_show: "show"
-image:
-  preview_only: true
-external_link: "https://dblogr.com/dblogr/cypher/cypher.html"
+title: cypher
 output: github_document
 ---
 
@@ -19,7 +9,7 @@ knitr::opts_chunk$set(echo = T, fig.width = 10, fig.height = 4)
 
 <img src="hex_cypher.png" align="right" width = "200px" />
 
-`cypher`: an `R` package for coding secret messages
+`cypher`: an `R` package for coding and decoding secret messages
 
 # Installation
 

@@ -1,4 +1,11 @@
 url: https://derekmichaelwright.github.io/cypher
 template:
   bootstrap: 5
+  bootswatch: slate
+  bslib:
+    bg: "#808080"
+    fg: "#000000"
+    primary: "#006400"
+  
+
 

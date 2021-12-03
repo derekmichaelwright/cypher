@@ -2,7 +2,7 @@ cypher
 ================
 Derek Michael Wright <wrightmderek@gmail.com>
 [www.dblogr.com/](https://dblogr.com/#posts_dblogr)
-2021-09-06
+2021-12-03
 
 <img src="hex_cypher.png" align="right" width = "200px" />
 
@@ -25,7 +25,7 @@ xx <- cypher_code("This is a secret coded message")
 xx
 ```
 
-    ## [1] "578 138 152 157 164 84 156 164 88 148 85 164 153 151 163 151 165 81 154 165 153 154 152 88 159 153 168 163 148 158 150"
+    ## [1] "229 138 155 156 167 84 158 166 87 146 88 165 157 148 170 156 166 86 151 166 155 157 150 88 160 151 166 169 153 155 156"
 
 # Decoded Message
 

@@ -1,8 +1,6 @@
 cypher
 ================
 
-<img src="hex_cypher.png" align="right" width = "200px" />
-
 `cypher`: an `R` package for coding and decoding secret messages
 
 # Installation
@@ -15,6 +13,8 @@ devtools::install_github("derekmichaelwright/cypher")
 library(cypher)
 ```
 
+![](man/figures/hex_cypher.png)
+
 # Code Message
 
 ``` r
@@ -22,7 +22,7 @@ xx <- cypher_code("This is a secret coded message")
 xx
 ```
 
-    ## [1] "951 138 157 155 168 88 156 164 85 149 85 168 155 155 167 151 164 81 149 161 152 157 152 84 157 158 164 169 154 154 154"
+    ## [1] "708 132 156 158 167 81 157 168 83 146 83 165 156 150 163 154 171 83 151 162 151 151 151 87 159 152 172 169 151 156 151"
 
 # Decoded Message
 
@@ -32,15 +32,13 @@ cypher_decode(xx)
 
     ## [1] "This is a secret coded message"
 
-------------------------------------------------------------------------
-
 # Shiny App
 
 Download and run the following `R` script:
 
-<https://github.com/derekmichaelwright/cypher/blob/master/shinyapp/app.R>
-
-------------------------------------------------------------------------
+<a href="https://github.com/derekmichaelwright/cypher/blob/master/shinyapp/app.R">
+<button class="btn btn-success"><i class="far fa-file-code"></i> https://github.com/derekmichaelwright/cypher/blob/master/shinyapp/app.R</button>
+</a>
 
 # Personalize
 

@@ -1,13 +1,12 @@
 ---
 title: cypher
 output: github_document
+always_allow_html: true
 ---
 
 ```{r setup, include = FALSE}
-knitr::opts_chunk$set(echo = T, fig.width = 10, fig.height = 4)
+knitr::opts_chunk$set(echo = T)
 ```
-
-<img src="hex_cypher.png" align="right" width = "200px" />
 
 `cypher`: an `R` package for coding and decoding secret messages
 
@@ -20,6 +19,8 @@ devtools::install_github("derekmichaelwright/cypher")
 ```{r}
 library(cypher)
 ```
+
+![](man/figures/hex_cypher.png)
 
 # Code Message
 
@@ -34,15 +35,20 @@ xx
 cypher_decode(xx)
 ```
 
----
-
 # Shiny App
 
 Download and run the following `R` script:
 
-https://github.com/derekmichaelwright/cypher/blob/master/shinyapp/app.R
-
----
+```{r echo = F}
+downloadthis::download_link(
+  link = "https://github.com/derekmichaelwright/cypher/blob/master/shinyapp/app.R",
+  button_label = "https://github.com/derekmichaelwright/cypher/blob/master/shinyapp/app.R",
+  button_type = "success",
+  has_icon = TRUE,
+  icon = "far fa-file-code",
+  self_contained = FALSE
+)
+```
 
 # Personalize
 

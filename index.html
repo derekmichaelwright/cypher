@@ -26,7 +26,7 @@
     
     <a class="navbar-brand me-2" href="index.html">cypher</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,7 +53,6 @@
   <main id="main" class="col-md-9"><div class="section level1">
 <div class="page-header"><h1 id="cypher">cypher<a class="anchor" aria-label="anchor" href="#cypher"></a>
 </h1></div>
-<p><img src="hex_cypher.png" align="right" width="200px"></p>
 <p><code>cypher</code>: an <code>R</code> package for coding and decoding secret messages</p>
 </div>
 <div class="section level1">
@@ -63,6 +62,7 @@
 <code class="sourceCode R"><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"derekmichaelwright/cypher"</span><span class="op">)</span></code></pre></div>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://derekmichaelwright.github.io/cypher">cypher</a></span><span class="op">)</span></code></pre></div>
+<p><img src="reference/figures/hex_cypher.png"></p>
 </div>
 <div class="section level1">
 <h1 id="code-message">Code Message<a class="anchor" aria-label="anchor" href="#code-message"></a>
@@ -70,7 +70,7 @@
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">xx</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/cypher_code.html">cypher_code</a></span><span class="op">(</span><span class="st">"This is a secret coded message"</span><span class="op">)</span>
 <span class="va">xx</span></code></pre></div>
-<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co">## [1] "951 138 157 155 168 88 156 164 85 149 85 168 155 155 167 151 164 81 149 161 152 157 152 84 157 158 164 169 154 154 154"</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co">## [1] "708 132 156 158 167 81 157 168 83 146 83 165 156 150 163 154 171 83 151 162 151 151 151 87 159 152 172 169 151 156 151"</span></span></code></pre></div>
 </div>
 <div class="section level1">
 <h1 id="decoded-message">Decoded Message<a class="anchor" aria-label="anchor" href="#decoded-message"></a>
@@ -78,14 +78,12 @@
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="reference/cypher_decode.html">cypher_decode</a></span><span class="op">(</span><span class="va">xx</span><span class="op">)</span></code></pre></div>
 <div class="sourceCode" id="cb6"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="co">## [1] "This is a secret coded message"</span></span></code></pre></div>
-<hr>
 </div>
 <div class="section level1">
 <h1 id="shiny-app">Shiny App<a class="anchor" aria-label="anchor" href="#shiny-app"></a>
 </h1>
 <p>Download and run the following <code>R</code> script:</p>
-<p><a href="https://github.com/derekmichaelwright/cypher/blob/master/shinyapp/app.R" class="external-link uri">https://github.com/derekmichaelwright/cypher/blob/master/shinyapp/app.R</a></p>
-<hr>
+<p><a href="https://github.com/derekmichaelwright/cypher/blob/master/shinyapp/app.R" class="external-link"> <button class="btn btn-success"><i class="far fa-file-code"></i> <a href="https://github.com/derekmichaelwright/cypher/blob/master/shinyapp/app.R" class="external-link uri">https://github.com/derekmichaelwright/cypher/blob/master/shinyapp/app.R</a></button> </a></p>
 </div>
 <div class="section level1">
 <h1 id="personalize">Personalize<a class="anchor" aria-label="anchor" href="#personalize"></a>
@@ -104,7 +102,7 @@
   </main><aside class="col-md-3"><div class="license">
 <h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
-<li>Open Source</li>
+<li><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" class="external-link"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a></li>
 </ul>
 </div>
 
@@ -119,7 +117,7 @@
 <div class="developers">
 <h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
-<li>Derek M. Wright <br><small class="roles"> Maintainer </small>  </li>
+<li>Derek Wright <br><small class="roles"> Author, maintainer </small>  </li>
 </ul>
 </div>
 
@@ -131,7 +129,7 @@
 
     <footer><div class="pkgdown-footer-left">
   <p></p>
-<p>Developed by Derek M. Wright.</p>
+<p>Developed by Derek Wright.</p>
 </div>
 
 <div class="pkgdown-footer-right">

@@ -5,6 +5,8 @@
 #' @return decoded message
 #' @export
 #' @examples
+#' xx <- cypher_code("This is a secret coded message")
+#' xx
 #' cypher_decode(xx)
 
 cypher_decode <- function(x) {

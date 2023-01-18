@@ -10,6 +10,10 @@ knitr::opts_chunk$set(echo = T)
 
 `cypher`: an `R` package for coding and decoding secret messages
 
+Uses a Caesar cypher in which each letter gets a different shift. Additionally, each message gets a different set of shifts based on the 3 number code at the start of the message.
+
+---
+
 # Installation
 
 ```{r eval = F}
@@ -21,6 +25,8 @@ library(cypher)
 ```
 
 ![](man/figures/hex_cypher.png)
+
+---
 
 # Code Message
 
@@ -34,6 +40,8 @@ xx
 ```{r}
 cypher_decode(xx)
 ```
+
+---
 
 # Shiny App
 
@@ -50,6 +58,8 @@ downloadthis::download_link(
 )
 ```
 
+---
+
 # Personalize
 
 A custom cypher for this package can be recreated using the following code. However, it should be noted that the recipient will need the `Data/cyphers.RData` file to decode the messages.
@@ -60,6 +70,26 @@ for(i in 1:999) {
   cyphers[i] <- paste(round(runif(1000, 0, 9)),collapse = "")
 }
 save(cyphers, file = "Data/cyphers.RData")
+```
+
+---
+
+# R Script/Functions
+
+```{r}
+cypher_code <- function(x) {
+  cn <- round(runif(1, 1, 999))
+  x <- paste(c(as.numeric(stringr::str_pad(cn, 3, pad = "0")), utf8ToInt(x) + utf8ToInt(substr(cyphers[cn], 1, nchar(x)))), collapse = " ")
+  x
+}
+```
+
+```{r}
+cypher_decode <- function(x) {
+  x <- as.numeric(unlist(strsplit(x, split = " ")))
+  cn <- x[1]
+  intToUtf8(x[2:length(x)] - utf8ToInt(substr(cyphers[cn], 1, length(x)-1)))
+}
 ```
 
 ---

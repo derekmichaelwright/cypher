@@ -3,7 +3,7 @@ cypher
 
 `cypher`: an `R` package for coding and decoding secret messages
 
-Uses a Ceasar cypher in which each letter gets a different shift.
+Uses a Caesar cypher in which each letter gets a different shift.
 Additionally, each message gets a different set of shifts based on the 3
 number code at the start of the message.
 
@@ -30,7 +30,7 @@ xx <- cypher_code("This is a secret coded message")
 xx
 ```
 
-    ## [1] "228 141 154 158 172 81 161 171 83 149 84 168 151 151 162 154 166 86 148 159 150 151 156 85 161 156 166 166 153 159 156"
+    ## [1] "346 137 159 159 165 85 159 168 84 151 82 172 156 154 168 152 167 88 150 167 149 157 152 80 159 152 167 166 146 155 150"
 
 # Decoded Message
 

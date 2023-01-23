@@ -16,5 +16,7 @@ decoded message
 decode a secret message.
 }
 \examples{
+xx <- cypher_code("This is a secret coded message")
+xx
 cypher_decode(xx)
 }

@@ -5,7 +5,7 @@
 #' @return coded text
 #' @export
 #' @examples
-#' xx <- cypher_code("This is a secret coded message")
+#' xx <- cypher_code(x = "This is a secret coded message")
 #' xx
 #' cypher_decode(xx)
 

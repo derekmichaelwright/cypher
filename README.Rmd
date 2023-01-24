@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = T)
 
 `cypher`: an `R` package for coding and decoding secret messages
 
-Uses a Caesar cypher in which each letter gets a different shift. Additionally, each message gets a different set of shifts based on the 3 number code at the start of the message.
+![](man/figures/hex_cypher.png)
 
 ---
 
@@ -23,8 +23,6 @@ devtools::install_github("derekmichaelwright/cypher")
 ```{r}
 library(cypher)
 ```
-
-![](man/figures/hex_cypher.png)
 
 ---
 
@@ -71,6 +69,12 @@ for(i in 1:999) {
 }
 save(cyphers, file = "Data/cyphers.RData")
 ```
+
+---
+
+# How it works
+
+This package uses a Caesar cypher in which each letter gets a different shift. Additionally, each message gets a different set of shifts based on the 3 number code at the start of the message. The first 3 numbers indicate which cypher will be used, and indicates the shift used for every character. then the utf8 codes are converted to integers and the caesar shift is added. For decoding, the first 3 numbers are read and used to find the correct cypher, then the integers are shifted, allowing the integers to be converted back to utf8 coding.
 
 ---
 

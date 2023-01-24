@@ -16,7 +16,7 @@ coded text
 send secret message.
 }
 \examples{
-xx <- cypher_code("This is a secret coded message")
+xx <- cypher_code(x = "This is a secret coded message")
 xx
 cypher_decode(xx)
 }

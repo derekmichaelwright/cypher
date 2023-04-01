@@ -8,9 +8,9 @@ always_allow_html: true
 knitr::opts_chunk$set(echo = T)
 ```
 
-`cypher`: an `R` package for coding and decoding secret messages
+`cypher`: an R package for coding and decoding secret messages
 
-![](man/figures/hex_cypher.png)
+![](man/figures/logo_cypher.png)
 
 ---
 
@@ -45,16 +45,7 @@ cypher_decode(xx)
 
 Download and run the following `R` script:
 
-```{r echo = F}
-downloadthis::download_link(
-  link = "https://github.com/derekmichaelwright/cypher/blob/master/shinyapp/app.R",
-  button_label = "https://github.com/derekmichaelwright/cypher/blob/master/shinyapp/app.R",
-  button_type = "success",
-  has_icon = TRUE,
-  icon = "far fa-file-code",
-  self_contained = FALSE
-)
-```
+https://github.com/derekmichaelwright/cypher/blob/master/shinyapp/app.R
 
 ---
 

@@ -1,9 +1,9 @@
 cypher
 ================
 
-`cypher`: an `R` package for coding and decoding secret messages
+`cypher`: an R package for coding and decoding secret messages
 
-![](man/figures/hex_cypher.png)
+![](man/figures/logo_cypher.png)
 
 ------------------------------------------------------------------------
 
@@ -26,7 +26,7 @@ xx <- cypher_code("This is a secret coded message")
 xx
 ```
 
-    ## [1] "761 133 154 156 171 84 160 168 82 147 87 168 153 153 168 151 165 85 152 159 155 154 151 88 162 157 163 171 149 159 157"
+    ## [1] "926 138 156 154 170 81 156 165 82 152 87 168 156 148 166 152 167 81 155 159 155 153 152 89 162 152 170 168 150 154 151"
 
 # Decoded Message
 
@@ -42,9 +42,7 @@ cypher_decode(xx)
 
 Download and run the following `R` script:
 
-<a href="https://github.com/derekmichaelwright/cypher/blob/master/shinyapp/app.R">
-<button class="btn btn-success"><i class="far fa-file-code"></i> https://github.com/derekmichaelwright/cypher/blob/master/shinyapp/app.R</button>
-</a>
+<https://github.com/derekmichaelwright/cypher/blob/master/shinyapp/app.R>
 
 ------------------------------------------------------------------------
 

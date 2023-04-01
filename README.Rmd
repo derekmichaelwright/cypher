@@ -89,4 +89,4 @@ cypher_decode <- function(x) {
 
 ---
 
-&copy; Derek Michael Wright [www.dblogr.com/](https://dblogr.com/)
+&copy; Derek Michael Wright
